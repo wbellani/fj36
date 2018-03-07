@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="br.com.caelum.estoque.rmi.EstoqueRmi"/>
+<fullyQualifiedTypeName name="java.rmi.Naming"/>
+<fullyQualifiedTypeName name="br.com.caelum.estoque.rmi.ItemEstoque"/>
+</qualifiedTypeNameHistroy>
