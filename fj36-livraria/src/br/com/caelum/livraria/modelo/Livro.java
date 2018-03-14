@@ -8,7 +8,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlTransient;
+@XmlAccessorType(XmlAccessType.FIELD)
 @Entity
 public class Livro implements Serializable{
 
@@ -16,16 +19,19 @@ public class Livro implements Serializable{
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@XmlTransient
 	private Integer id;
 	private String codigo;
 	private String titulo;
 	private String tituloCurto;
 	private String nomeAutor;
+	@XmlTransient
 	private String imagem;
 	private BigDecimal valorEbook;
 	private BigDecimal valorImpresso; 
 
 	@Column(length=1000) 
+	@XmlTransient
 	private String descricao;
 
 	Livro() {}//só para hibernate ficar feliz

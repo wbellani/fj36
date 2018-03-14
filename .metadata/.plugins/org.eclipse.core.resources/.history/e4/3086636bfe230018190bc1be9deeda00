@@ -1,0 +1,7 @@
+package br.com.caelum.jms;
+
+import javax.jms.MessageListener;
+
+public interface TratadorDeMensagem extends MessageListener {
+
+}

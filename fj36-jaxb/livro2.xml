@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<livro>
+    <categoria>
+        <nome>TI</nome>
+    </categoria>
+    <codigo>ARQ</codigo>
+    <nomeAutor>Paulo	Silveira</nomeAutor>
+    <titulo>Arquitetura	Java</titulo>
+    <valor>29.90</valor>
+</livro>

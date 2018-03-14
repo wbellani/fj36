@@ -13,7 +13,13 @@ import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementWrapper;
+import javax.xml.bind.annotation.XmlRootElement;
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlRootElement
 @Entity
 public class Pedido implements Serializable {
 
@@ -26,7 +32,9 @@ public class Pedido implements Serializable {
 	private Calendar data;
 	
 	@OneToMany(cascade=CascadeType.PERSIST)
-	private Set<ItemCompra> itens;
+	@XmlElementWrapper(name="itens")
+	@XmlElement(name="item")
+	private	Set<ItemCompra>	itens;
 
 	@OneToOne(cascade=CascadeType.PERSIST)
 	@JoinColumn(unique=true)

@@ -10,5 +10,22 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jboss-cli-client.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jboss-client.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/lib-jaxrs/commons-io-2.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/lib-jaxrs/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/lib-jaxrs/httpclient-4.2.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/lib-jaxrs/httpcore-4.2.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/lib-jaxrs/jackson-annotations-2.2.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/lib-jaxrs/jackson-core-2.2.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/lib-jaxrs/jackson-databind-2.2.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/lib-jaxrs/jackson-jaxrs-base-2.2.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/lib-jaxrs/jackson-jaxrs-json-provider-2.2.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/lib-jaxrs/jackson-module-jaxb-annotations-2.2.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/lib-jaxrs/jaxrs-api-3.0.5.Final.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/lib-jaxrs/resteasy-client-3.0.5.Final.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/lib-jaxrs/resteasy-jackson2-provider-3.0.5.Final.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/lib-jaxrs/resteasy-jaxb-provider-3.0.6.Final.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/lib-jaxrs/resteasy-jaxrs-3.0.5.Final.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

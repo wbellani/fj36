@@ -1,0 +1,17 @@
+package br.com.caelum.jaxb;
+
+import java.math.BigDecimal;
+
+import javax.xml.bind.annotation.XmlRootElement;
+
+
+
+@XmlRootElement
+public class Livro {
+	private	String	codigo;
+	private	String	titulo;
+	private	String	nomeAutor;
+	private	BigDecimal	valor;
+	
+	
+}

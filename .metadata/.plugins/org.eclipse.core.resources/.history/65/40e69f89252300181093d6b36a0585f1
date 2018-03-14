@@ -1,0 +1,9 @@
+package br.com.caelum.payfast.rest;
+
+import javax.ejb.Singleton;
+import javax.ws.rs.Path;
+
+@Path("/pagamentos")
+@Singleton
+public	class	PagamentoResource	{
+}
