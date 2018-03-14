@@ -1,0 +1,2 @@
+2018-03-14 19:19:58,886 [Worker-38] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/camel/camel-core/2.14.1/camel-core-2.14.1-sources.jar
+2018-03-14 19:20:00,172 [Worker-38] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/camel/camel-core/2.14.1/camel-core-2.14.1-sources.jar
