@@ -2702,3 +2702,38 @@ org.eclipse.debug.core.DebugException: Terminate failed
 	at java.lang.Thread.run(Thread.java:748)
 !SUBENTRY 1 org.eclipse.debug.core 4 5010 2018-03-16 22:04:25.347
 !MESSAGE Terminate failed
+!SESSION 2018-03-16 22:05:05.586 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 4 0 2018-03-16 22:13:04.665
+!MESSAGE Terminate failed
+!STACK 1
+org.eclipse.debug.core.DebugException: Terminate failed
+	at org.eclipse.debug.core.model.RuntimeProcess.terminate(RuntimeProcess.java:228)
+	at org.jboss.ide.eclipse.as.wtp.core.server.launch.AbstractStartJavaServerLaunchDelegate$2$1.run(AbstractStartJavaServerLaunchDelegate.java:221)
+!SUBENTRY 1 org.eclipse.debug.core 4 5010 2018-03-16 22:13:04.666
+!MESSAGE Terminate failed
+
+!ENTRY org.eclipse.jface.text 2 0 2018-03-16 22:28:10.021
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-03-16 22:28:10.022
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 4 16973825 2018-03-16 22:38:10.285
+!MESSAGE Server processes have terminated prematurely. Please check your server logs for more details. 
+!SESSION 2018-03-16 22:45:08.740 -----------------------------------------------
+eclipse.buildId=4.6.3.M20170301-0400
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-03-16 22:45:14.739
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.

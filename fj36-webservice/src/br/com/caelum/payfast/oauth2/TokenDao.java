@@ -3,6 +3,9 @@ package br.com.caelum.payfast.oauth2;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.enterprise.context.ApplicationScoped;
+
+@ApplicationScoped
 public class TokenDao {
 	private List<String> accessTokens = new ArrayList<>();
 

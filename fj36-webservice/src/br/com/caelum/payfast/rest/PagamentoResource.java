@@ -36,11 +36,12 @@ public class PagamentoResource {
 	private TokenDao tokenDao;
 	@Inject
 	private HttpServletRequest request;
+	
 	private Map<Integer, Pagamento> repositorio = new HashMap<>();
 	private Integer idPagamento = 1;
 
 	public PagamentoResource() {
-
+		
 		Pagamento pagamento = new Pagamento();
 		pagamento.setId(idPagamento++);
 		pagamento.setValor(BigDecimal.TEN);
@@ -59,8 +60,8 @@ public class PagamentoResource {
 
 	@POST
 	@Consumes({ MediaType.APPLICATION_JSON })
-	public Response criarPagamento(Transacao transacao) throws URISyntaxException {
-		Response unauthorized = Response.status(Status.UNAUTHORIZED).build();
+	public Response criarPagamento(Transacao transacao) throws Exception {
+		Response unauthorized = Response.status(Status.BAD_GATEWAY).build();
 		try {
 			OAuthAccessResourceRequest oauthRequest = new OAuthAccessResourceRequest(request);
 			String accessToken = oauthRequest.getAccessToken();
@@ -79,11 +80,9 @@ public class PagamentoResource {
 				return unauthorized;
 			}
 		} catch (OAuthProblemException | OAuthSystemException e) {
-			throw new BadRequestException(unauthorized, e);
+			throw new BadRequestException();
 		}
 	}
-
-	
 
 	@PUT
 	@Path("/{id}")

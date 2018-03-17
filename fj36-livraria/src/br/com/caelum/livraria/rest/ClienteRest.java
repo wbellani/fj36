@@ -21,7 +21,7 @@ public class ClienteRest implements Serializable {
 
 	private static final String SERVER_URI = "http://localhost:8080/fj36-webservice";
 
-	private static final String ENTRY_POINT = "/v1/pagamentos/";
+	private static final String ENTRY_POINT = "/api/v1/pagamentos/";
 
 	public Pagamento criarPagamento(Transacao transacao) {
 		Client cliente = ClientBuilder.newClient();
