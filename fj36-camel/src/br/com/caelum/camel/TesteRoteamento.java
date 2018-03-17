@@ -12,13 +12,15 @@ public class TesteRoteamento {
 		context.addRoutes(new RouteBuilder() {
 			@Override
 			public void configure() throws Exception {
-
-				from("file:entrada?delay=5s").log(LoggingLevel.INFO, "Processando	mensagem	${id}")
-						.to("file:saida");
-
+				errorHandler(deadLetterChannel("file:falha").
+						useOriginalMessage().
+						maximumRedeliveries(2).
+						redeliveryDelay(2000).
+						retryAttemptedLogLevel(LoggingLevel.ERROR));
+				from("file:entrada?delay=5s").log("processando: ${id}").to("validator:file:xsd/pedido.xsd").to("file:saida");
 			}
 		});
-	
+
 		context.start();
 		Thread.sleep(30 * 1000);
 		context.stop();
